@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Order Confirmation</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://c.webfontfree.com/c.js?f=Blacksword"
+      type="text/javascript"
+    ></script>
+  </head>
+  <style type="text/css">
+    *{ padding: 0px; margin: 0px; box-sizing: border-box; font-family:
+    'Poppins', sans-serif; } /*h2{ font-family: 'Blacksword', cursive; }*/
+  </style>
+  <body>
+
+    <div style="height: 100vh;display: flex;align-items: center;">
+      <div
+        style="background-color: #f5f5f5; padding:30px; border-radius: 10px; max-width: 800px; margin-inline:auto;position: relative;background-image: url('http://34.195.103.99:4005/golden_wave_left_122.png'); background-repeat: no-repeat;"
+      >
+        <div style="">
+          <img
+            src="http://34.195.103.99:4005/logo.png"
+            style="width: 200px; object-fit: contain; margin-inline:auto;display: block;"
+          />
+        </div>
+        <h3 style="margin-top:25px;font-size: 22px; margin-bottom:15px">Dear
+          Seller,</h3>
+        <p style="margin-bottom: 10px;">
+          We are pleased to inform you that a new order has been placed on your
+          store. Here are the details:
+
+        </p>
+        <table
+          style="width:100%;margin-top:20px;margin-bottom: 20px;border:1px solid #d8d8d8;border-collapse: collapse; "
+        >
+          <tr>
+            <td style="padding:6px 8px;border:1px solid #d8d8d8">Product Name</td>
+            <td
+              style="padding:6px 8px;border:1px solid #d8d8d8"
+            >{{product_buy_rent}}</td>
+          </tr>
+
+          <tr>
+            <td style="padding:6px 8px;border:1px solid #d8d8d8">Order Number</td>
+            <td
+              style="padding:6px 8px;border:1px solid #d8d8d8"
+            >{{cart_id}}</td>
+          </tr>
+        </table>
+        <p>
+          Please proceed with preparing the order for shipment. Once the order
+          has been shipped, please update the order status accordingly in your
+          system.
+
+        </p>
+        <div style="margin-top: 25px;">
+          <p>Cheers,</p>
+          <h3 style="font-family: 'Blacksword', cursive;">Second Stage Team</h3>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
